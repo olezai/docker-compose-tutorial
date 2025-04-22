@@ -1,0 +1,12 @@
+olezai@OZAIVENKO3-NB:~$ curl -s https://docs.docker.com/compose/gettingstarted/ | grep -oP '<h2[^>]*\bid=([^ >"]+)' | sed 's/.*id=//' 
+
+prerequisites
+step-1-set-up
+step-2-define-services-in-a-compose-file
+step-3-build-and-run-your-app-with-compose
+step-4-edit-the-compose-file-to-use-compose-watch
+step-5-re-build-and-run-the-app-with-compose
+step-6-update-the-application
+step-7-split-up-your-services
+step-8-experiment-with-some-other-commands
+where-to-go-next
