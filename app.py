@@ -20,7 +20,8 @@ def get_hit_count():
 @app.route('/')
 def hello():
     count = get_hit_count()
-    return f'Hello World! I have been seen {count} times.\n'
+    return f'Hello, Alex! I have been seen {count} times.\n'
 
+# This part is not necessary, because environment vars FLASK_APP and FLASK_RUN_HOST are set in Dockerfile
 # if __name__ == "__main__":
 #     app.run(host="0.0.0.0", port=6001, debug=True)

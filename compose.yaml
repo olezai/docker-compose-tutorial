@@ -3,5 +3,10 @@ services:
     build: .
     ports:
       - "8000:5000"
+    develop: # develop.watch was introduced in docker compose 2.22.0
+      watch:
+        - action: sync
+          path: .
+          target: /code
   redis:
     image: "redis:alpine"
